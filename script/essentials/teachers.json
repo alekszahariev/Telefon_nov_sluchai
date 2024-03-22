@@ -1,0 +1,23 @@
+[
+    {
+        "id":"1", "name":"Керълайн Скот", "position": "Директор", "birthday":"02.05.1978", "img":"./assets/teachers/kerylain.png", "dosie":"Не", "naet_data":"11.03.2011", "teaching":"Английски език"
+    },
+    {
+        "id":"2", "name":"Иън Хардинг", "position": "Преподавател", "birthday":"18.06.1990", "img":"./assets/teachers/iyn.png", "dosie":"Не", "naet_data":"24.10.2017", "teaching":"Английски език"
+    },
+    {
+        "id":"3", "name":"Стивън Джонсън", "position": "Преподавател", "birthday":"30.12.1976", "img":"./assets/teachers/stivyn.png", "dosie":"Не", "naet_data":"11.03.2015", "teaching":"Физическо"
+    },
+    {
+        "id":"4", "name":"Бен Макензи", "position": "Преподавател", "birthday":"11.04.1976", "img":"./assets/teachers/ben.png", "dosie":"Не", "naet_data":"11.03.2016", "teaching":"История"
+    },
+    {
+        "id":"5", "name":"Кейт Милън", "position": "Преподавател", "birthday":"11.04.1980", "img":"./assets/teachers/keit.png", "dosie":"Не", "naet_data":"11.03.2009", "teaching":"Математика"
+    },
+    {
+        "id":"6", "name":"Джон Долтън", "position": "Чистач", "birthday":"11.10.1971", "img":"./assets/teachers/djon.png", "dosie":"Да", "naet_data":"18.12.2017", "teaching":"-----"
+    },
+    {
+        "id":"7", "name":"Майкъл Левис", "position": "Портиер", "birthday":"19.08.1970", "img":"./assets/teachers/maikyl.png", "dosie":"Не", "naet_data":"11.03.2000", "teaching":"-----"
+    }
+]
