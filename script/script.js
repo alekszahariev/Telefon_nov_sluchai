@@ -1,3 +1,16 @@
+/* PhonePassword() */
+function PhonePassword(){
+    let password = prompt("Парола за телефона:", "");
+    if(password === "879"){
+                   
+   
+    }else{
+        alert("Грешна парола")
+        PhonePassword()
+    }
+}
+
+
 
 
 let app = document.querySelector(".app")
@@ -171,7 +184,7 @@ function MessengerApp(){
     loginbtn.addEventListener("click", function(){
       let email = document.querySelector(".fb-login-mail").value.toLowerCase()
       let pass = document.querySelector(".fb-login-pass").value.toLowerCase()
-      if(email === "ardjikov@mail.com" && pass === "333"){
+      if(email === "ardjikov@mail.com" && pass === "elenaivan1969"){
         isloggedin_messenger = 1
         ShowChatList()
       }else{
@@ -371,54 +384,53 @@ function ShowChatList(){
           })
   
           let discussionDiv = document.querySelector(".discussion")
-          conversation.conversation.forEach(message => {
-              const bubble = document.createElement("div");
-              bubble.setAttribute("data-timestamp", message.timestamp)
-              if(message.type === "msg"){
-                  bubble.textContent = message.message;
-                  bubble.innerHTML+= `<span class="timestamp">${message.timestamp}</span>`
-              }
-              if(message.type === "audio"){
-                  let audio_link = message.message
-                  bubble.innerHTML = 
-                  `
-                  <audio controls>
-                  <source src="${audio_link}" type="audio/ogg">
-                   <source src="${audio_link}" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                  </audio>
-                  `
-              }
-  
-              if(message.type === "img"){
-                  let imglink = message.message
-                  bubble.innerHTML = 
-                  `
-                  <img src="${imglink}" alt="">
-                  `
-              }
-              if (message.sender === "You") {
-                bubble.classList.add("bubble", "recipient");
-              } else {
-                bubble.classList.add("bubble", "sender");
-              }
-              discussionDiv.appendChild(bubble);
-          });
-           // add timestamp in the message
-           let chatbubbles = document.querySelectorAll(".bubble")
-           chatbubbles.forEach(bubble =>{
-               bubble.addEventListener("click", function(){
-                   let timestamp = bubble.getAttribute("data-timestamp")
-                   // check if there is timestamp in the html
-                   const hasTimestamp = bubble.querySelector("span.timestamp") !== null;
-                   if (!hasTimestamp) {
-                      bubble.innerHTML += `<span class="timestamp">${timestamp}</span>`;
-                    }else{
-                      const existingTimestamp = bubble.querySelector("span.timestamp");
-                      existingTimestamp.remove()
-                    }
-               })
-           })
+          let lastDate = "";
+
+conversation.conversation.forEach(message => {
+    const bubble = document.createElement("div");
+    bubble.setAttribute("data-timestamp", message.timestamp);
+
+    // Extract the date part from the timestamp
+    const currentDate = message.timestamp.split(' ')[0];
+
+    // Check if the current message's date is different from the last one
+    if (currentDate !== lastDate) {
+        const dateSeparator = document.createElement("span");
+        dateSeparator.classList.add("date-separator");
+        dateSeparator.textContent = currentDate; // Use currentDate to show only the date part
+        discussionDiv.appendChild(dateSeparator);
+        lastDate = currentDate;
+    }
+
+    if (message.type === "msg") {
+        bubble.textContent = message.message;
+        bubble.innerHTML += `<span class="timestamp">${message.timestamp}</span>`;
+    } else if (message.type === "audio") {
+        let audio_link = message.message;
+        bubble.innerHTML =
+            `
+            <audio controls>
+            <source src="${audio_link}" type="audio/ogg">
+            <source src="${audio_link}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            `;
+    } else if (message.type === "img") {
+        let imgLink = message.message;
+        bubble.innerHTML =
+            `
+            <img src="${imgLink}" alt="">
+            `;
+    }
+
+    if (message.sender === "You") {
+        bubble.classList.add("bubble", "recipient");
+    } else {
+        bubble.classList.add("bubble", "sender");
+    }
+    discussionDiv.appendChild(bubble);
+});
+         
         } 
        })
       })
@@ -778,7 +790,7 @@ button_login_email.addEventListener("click", function(){
   let email_input = document.getElementById("email-login").value.toLowerCase()
   let password_input = document.getElementById("password-login").value.toLowerCase()
 
-  if(email_input === "123" & password_input === "123"){
+  if(email_input === "ardjikov@mail.com" & password_input === "ardjikov777"){
     isloggedin_mail = 1;
     ShowMailList()
   }else{
@@ -803,14 +815,14 @@ function ShowMailList(){
     `
     <div class="email-list app-common">
     <h2>Inbox</h2>
-    <div data-id="8" class="single-mail">
+    <div data-id="854" class="single-mail">
                     <div class="single-mail-head">
                         <span class="from"><i style="color:#5f9eff;" class="fa-solid fa-circle"></i>  Mark Zuckerberg                        </span>
                         <span class="date">Преди минута. <i class="fa-solid fa-arrow-right"></i></span>
                     </div>
                     <div class="content">
                         <p class="subject">Вашата парола</p>
-                        <p class="preview">Вашата парола е: 333</p>
+                        <p class="preview">Вашата парола е: elenaivan1969</p>
                     </div>
 
        </div>
@@ -926,35 +938,35 @@ function ShowMailList(){
   let forgot_pass = document.querySelector(".forgot-password-email")
   forgot_pass.addEventListener("click", function(){
     let email = prompt("Email:")
-    if(email.toLowerCase() === "123"){
+    if(email.toLowerCase() === "ardjikov@mail.com"){
       app_body.innerHTML = 
       `
       <div class="forgot-password app-common">
       <span>Забравена парола</span><br>
       ${email}
       <div class="form-group">
-          <label for="">Таен въпрос №1</label>
+          <label for="">Любима храна:</label>
           <input type="text"
             class="form-control firstanswer" aria-describedby="helpId" placeholder="">
           <small id="helpId" class="form-text text-muted">Изписва се на кирилица</small>
       </div>
 
       <div class="form-group">
-          <label for="">Таен въпрос №2</label>
+          <label for="">Рождена дата:</label>
           <input type="text"
             class="form-control secondanswer" aria-describedby="helpId" placeholder="">
-            <small id="helpId" class="form-text text-muted">Изписва се на кирилица</small>
+            <small id="helpId" class="form-text text-muted">dd.mm.yyyy</small>
       </div>
 
       <div class="form-group">
-          <label for="">Таен въпрос №3</label>
+          <label for="">Любим град:</label>
           <input type="text"
             class="form-control thirdanswer" aria-describedby="helpId" placeholder="">
             <small id="helpId" class="form-text text-muted">Изписва се на кирилица</small>
       </div>
 
       <div class="form-group">
-          <label for="">Таен въпрос №4</label>
+          <label for="">Любимият ти актьор от любимият ти филм:</label>
           <input type="text"
             class="form-control fourthanswer" aria-describedby="helpId" placeholder="">
             <small id="helpId" class="form-text text-muted">Изписва се на кирилица</small>
@@ -978,32 +990,32 @@ function ShowMailList(){
         var ans_4 = false
         var msg = ""
 
-        if(answer1 === "1"){
+        if(answer1 === "спагети"){
           ans_1 = true;
         }else{
           msg += "Грешка във въпрос 1"
         }
 
-        if(answer2 === "2"){
+        if(answer2 === "03.08.1969"){
           ans_2 = true;
         }else{
           msg += "Грешка във въпрос 2"
         }
         
-        if(answer3 === "3"){
+        if(answer3 === "карлово"){
           ans_3 = true;
         }else{
           msg += "Грешка във въпрос 3"
         }
         
-        if(answer4=== "4"){
+        if(answer4 === "марин янев"){
           ans_4 = true;
         }else{
           msg += "Грешка във въпрос 4"
         }
 
         if(ans_1 & ans_2 & ans_3 & ans_4){
-          app_body.innerHTML += `Вашата парола е: <b>123456</b>`
+          app_body.innerHTML += `Вашата парола е: <b>ardjikov777</b>`
         }else[
           alert(msg)
         ]
@@ -1249,12 +1261,30 @@ function IpTracker(){
     
        <div class="info">
        <h2>ЗАКЛЮЧЕНО</h2>
-           <p>Проследи браузър историята на всяко IP<br>За да влезеш използвай <span style="color:lightblue;">PassEncrypt</span>.</p>
-           
-       </div>
+           <p>Проследи браузър историята на всяко IP<br></p>
+          <input  type="text" class="ip-tracker-pass" placeholder="Масонски код">
+       </div> 
   
     </div>
     `    
+
+    let input_ip_password = document.querySelector(".ip-tracker-pass")
+    input_ip_password.addEventListener("change", function(){
+      let value = input_ip_password.value.toLowerCase()
+      if(value === "еманципация"){
+        iptracker_islocked = false
+        IpTracker()
+        
+        
+      }else{
+        input_ip_password.style.border = "1px solid red";
+        input_ip_password.value = "Грешка !!!"
+        setTimeout(() => {
+          input_ip_password.style.border = "grey";
+          input_ip_password.value = ""
+        }, 1000);
+      }
+    })
   }else{
     app_body.innerHTML = 
     `
@@ -1360,3 +1390,5 @@ function IpTracker(){
   }
 
 }
+
+

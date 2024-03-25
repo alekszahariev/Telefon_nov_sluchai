@@ -864,3 +864,18 @@ font-size: 30px;
     max-height: 400px;
     overflow-y: auto;
 }
+
+
+.date-separator{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.ip-tracker-pass{
+
+padding: 5px 20px;
+border-radius: 5px;
+
+}
