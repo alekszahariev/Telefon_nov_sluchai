@@ -697,23 +697,35 @@ audio {
 
 
 /* PHONE APP */
+.phoneapp{
+   
+}
 
 
 .keyboard {
     box-sizing: border-box;
     padding: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.number-key {
+.number-key{
     background: rgb(221, 219, 219);
     padding: 30px;
     font-size: 25px;
     clip-path: circle();
     margin: 5px;
     cursor: pointer;
+    box-sizing: border-box;
+}
+@media screen and (max-width:320px){
+    .number-key{
+        padding: 20px!important;
+    }
+    
 }
 
 .call {
@@ -733,6 +745,10 @@ audio {
     border: none;
     font-size: 35px;
     text-align: center;
+    margin-bottom: 0;
+    max-width: 200px;
+    margin: auto;
+    padding: 0;
 }
 
 .calling{
@@ -998,7 +1014,7 @@ audio {
     top: 10%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     height: 100px;
-    background: rgba(146, 146, 146, 0.5);
+    background: rgba(228, 228, 228, 0.9);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     position: absolute;

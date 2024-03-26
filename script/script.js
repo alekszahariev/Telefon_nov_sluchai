@@ -138,7 +138,7 @@ function Galeria(){
 }
 
 var password_messenger_mail = 0;
-isloggedin_messenger = 1
+isloggedin_messenger = 0
 function MessengerApp(){
     app_body.innerHTML = `
     <div class="lock-screen-messenger app-common">
@@ -648,7 +648,7 @@ function PhoneApp(){
       if(phone_number === "04222144"){
         input.value = "..."
         call_btn.style.background = "red";
-        var audio = new Audio('../assets/sounds/911.mp3');
+        var audio = new Audio('../assets/sounds/iplog.mp3');
         audio.play();
 
         call_btn.addEventListener("click", function(){
@@ -1032,10 +1032,10 @@ function ShowMailList(){
 
       let btn_check_pass = document.querySelector(".forgot-password .btn")
       btn_check_pass.addEventListener("click", function(){
-        let answer1 = document.querySelector(".firstanswer").value.toLowerCase()
-        let answer2 = document.querySelector(".secondanswer").value.toLowerCase()
-        let answer3 = document.querySelector(".thirdanswer").value.toLowerCase()
-        let answer4 = document.querySelector(".fourthanswer").value.toLowerCase()
+        let answer1 = document.querySelector(".firstanswer").value.toLowerCase().replace(/\s+/g, '')
+        let answer2 = document.querySelector(".secondanswer").value.toLowerCase().replace(/\s+/g, '')
+        let answer3 = document.querySelector(".thirdanswer").value.toLowerCase().replace(/\s+/g, '')
+        let answer4 = document.querySelector(".fourthanswer").value.toLowerCase().replace(/\s+/g, '')
 
         var ans_1 = false
         var ans_2 = false
@@ -1061,7 +1061,7 @@ function ShowMailList(){
           msg += "Грешка във въпрос 3"
         }
         
-        if(answer4 === "марин янев"){
+        if(answer4 === "маринянев"){
           ans_4 = true;
         }else{
           msg += "Грешка във въпрос 4"
