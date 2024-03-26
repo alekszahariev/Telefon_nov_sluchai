@@ -170,6 +170,7 @@ function MessengerApp(){
 
      if(email_to_send_pass.toLowerCase() === "ardjikov@mail.com"){
       alert("Изпратена е паролата на посочения емайл.")
+      ShowNotification("Mail", "Имате нов е-майл", "Вашата парола")
       password_messenger_mail = 1
      }else{
       alert("Няма свързан акаунт с този емайл.")
@@ -574,43 +575,95 @@ function SafariApp(){
 function PhoneApp(){
     app_body.innerHTML = 
     `
-    <div class="phoneapp">
-                    <span>Recents</span>
-                 
-                </div>
+    <div class="phoneapp app-common">
+                    
+    <input class="phone-call" value="" type="text" readonly>
+    
+    <div class="keyboard">
+        <span data-key="1" class="number-key">
+            1
+        </span>
+        <span data-key="2" class="number-key">
+            2
+        </span>
+        <span data-key="3" class="number-key">
+            3
+        </span>
+        <span data-key="4" class="number-key">
+            4
+        </span>
+        <span data-key="5" class="number-key">
+            5
+        </span>
+        <span data-key="6" class="number-key">
+            6
+        </span>
+        <span data-key="7" class="number-key">
+            7
+        </span>
+        <span data-key="8" class="number-key">
+            8
+        </span>
+        <span data-key="9" class="number-key">
+            9
+        </span>
+        <span data-key="*" class="number-key">
+            *
+        </span>
+        <span data-key="0" class="number-key">
+            0
+        </span>
+        <span data-key="#" class="number-key">
+            #
+        </span>
+        <span class="call">
+            <i class="fa-solid fa-phone"></i>
+        </span>
+
+    </div>    
+ 
+</div>
     `
+   
+    let input = document.querySelector(".phone-call")
+    let keys = document.querySelectorAll(".number-key")
 
+    let call_btn = document.querySelector(".call")
 
+    keys.forEach(key => {
+      key.addEventListener("click", function(){
+        let number = this.getAttribute("data-key")
+        input.value += number
+        var audio = new Audio('../assets/sounds/phone_key.mp3');
+          audio.play();
+      })
+    })
+    input.addEventListener("click", function(){
+      input.value = ""
+    })
 
+    call_btn.addEventListener("click", function(){
+      let phone_number = input.value
 
-    let phoneApp = document.querySelector(".phoneapp")
-    fetch('./script/essentials/phone-app.json') 
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    data.forEach(call => {
-    let number = call.number
-    let date = call.date
-    let status = call.status;
-    if(status==="missed"){
-        status = "missed";
-    }else{
-        status = "taken"
-    }
-    phoneApp.innerHTML += 
-    `
-    <div class="call">
-                    <span class="number ${status}">${number}</span>
-                    <span class="clock">${date}</span>
-    </div>
-    `
+      if(phone_number === "04222144"){
+        input.value = "..."
+        call_btn.style.background = "red";
+        var audio = new Audio('../assets/sounds/911.mp3');
+        audio.play();
 
-    });
-})
+        call_btn.addEventListener("click", function(){
+          audio.pause();
+          app.style.display="none";
+        })
+
+      }else{
+        input.value = "";
+        alert("Нямаш ваучер за този номер. Потърси безплатен номер :)")
+      }
+
+    })
+
+  
 }
 
 function Game(){
@@ -1392,3 +1445,21 @@ function IpTracker(){
 }
 
 
+function ShowNotification(app, title, description){
+  let notification = document.querySelector(".notification")
+  let not_app_name = document.querySelector(".not-app-name")
+  let not_title = document.querySelector(".not-data-title")
+  let not_desc = document.querySelector(".not-data-info")
+
+  notification.style.display = "flex"
+  not_app_name.innerHTML = app
+  not_title.innerHTML = title
+  not_desc.innerHTML = description
+  var audio = new Audio('../assets/sounds/notification.mp3');
+  audio.play();
+
+
+  notification.addEventListener("click", function(){
+    notification.style.display = "none";
+  })
+}

@@ -1,27 +1,26 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-*{
+* {
     font-family: 'SF Pro Display', sans-serif;
 }
-::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-::-webkit-scrollbar
-{
-	width: 2px;
-	background-color: #F5F5F5;
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar-thumb
-{
-	background-color: #5a5a5a;
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: #F5F5F5;
 }
 
-body{
-    background:rgb(31, 31, 31);
+::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a;
+}
+
+body {
+    background: rgb(31, 31, 31);
     margin-top: -50px;
     overflow: hidden;
     position: fixed;
@@ -30,7 +29,7 @@ body{
 }
 
 
-.mobile{
+.mobile {
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -46,11 +45,11 @@ body{
     z-index: 1;
     overflow-y: hidden;
     justify-content: space-between;
-    background-position:center;
+    background-position: center;
     transform: scale(0.8);
 }
 
-.mobile-nav{
+.mobile-nav {
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
@@ -60,17 +59,18 @@ body{
     max-width: 365px;
 }
 
-.icons i{
+.icons i {
     margin-left: 2px;
     margin-right: 2px;
 }
-.mobile-apps{
+
+.mobile-apps {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.icon{
+.icon {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -78,30 +78,34 @@ body{
     color: white;
     margin: 12px;
 }
-.mobile-apps .icon img{
+
+.mobile-apps .icon img {
     max-width: 60px;
     display: block;
     margin: auto;
 }
-.mobile-apps .icon span{
+
+.mobile-apps .icon span {
     font-size: 12px;
     margin-top: 5px;
 }
 
-.footer{
+.footer {
     display: flex;
     margin-top: 110px;
     background: rgb(255 43 43 / 50%);
     border-radius: 20px;
 }
-.footer .icon{
+
+.footer .icon {
     max-width: 65px;
 }
 
-.footer .messenger{
+.footer .messenger {
     border-radius: 20px;
 }
-.app{
+
+.app {
     background: rgb(255, 255, 255);
     max-width: 400px;
     min-height: 100vh;
@@ -119,38 +123,41 @@ body{
     padding-bottom: 50px;
     box-sizing: border-box;
 }
-.app-footer a{
-    padding: 20px 40px; 
+
+.app-footer a {
+    padding: 20px 40px;
     background: rgb(0, 0, 0);
     text-decoration: none;
-    color: white!important;
+    color: white !important;
     border-radius: 30px;
     cursor: pointer;
 }
-.app-body{
+
+.app-body {
     min-width: 100%;
 }
 
 
 
-/* APPS STYLES */ 
+/* APPS STYLES */
 
 /* PHOTOS */
-.photos-app{
-    display:  flex;
+.photos-app {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-height: 80vh;
-    overflow-y: auto;   
+    overflow-y: auto;
 }
-.photos-app img{
+
+.photos-app img {
     width: 120px;
     height: 100px;
     margin: 1px;
     cursor: pointer;
 }
 
-.open-image{
+.open-image {
     position: absolute;
     top: 0;
     display: flex;
@@ -163,7 +170,7 @@ body{
     min-width: 100%;
 }
 
-.nav-open-image{
+.nav-open-image {
     display: flex;
     box-sizing: border-box;
     padding: 20px;
@@ -172,25 +179,26 @@ body{
     align-items: center;
 }
 
-.image_goes_here img{
+.image_goes_here img {
     width: 100%;
     height: 100%;
 }
-.galleria{
+
+.galleria {
     width: 100%;
     height: 100%;
 }
 
 
 /* MESSENGER */
-.messenger-app{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   min-width: 390px;
+.messenger-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 390px;
 }
 
-.messenger-nav{
+.messenger-nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -198,97 +206,115 @@ body{
     padding: 10px;
     align-items: center;
 }
-.messenger-nav span{
+
+.messenger-nav span {
     font-weight: 600;
 }
-.messenger-nav i{
+
+.messenger-nav i {
     color: #00B2FF;
     font-size: 20px;
 }
-.chats{
+
+.chats {
     box-sizing: border-box;
     padding: 20px;
     max-height: 80vh;
     overflow-y: auto;
 }
 
-.person{
+.person {
     display: flex;
     margin-top: 15px;
     cursor: pointer;
 }
-.person:hover{
+
+.person:hover {
     opacity: 0.7;
 }
-.person img{
+
+.person img {
     max-width: 50px;
     border-radius: 50%;
 }
-.person-info-chat{
+
+.person-info-chat {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
 }
-.person-info-chat .name{
+
+.person-info-chat .name {
     font-weight: 600;
 }
-.msg-date{
+
+.msg-date {
     display: flex;
     color: rgb(156, 156, 156);
 }
-.msg-date .date{
+
+.msg-date .date {
     margin-left: 5px;
 }
 
 /* MESSAGES */
-.messages{
+.messages {
     min-width: 390px;
 }
-.messages-nav{
+
+.messages-nav {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 10px;
 }
-.messages-nav-left{
+
+.messages-nav-left {
     display: flex;
     align-items: center;
 }
-.messages-nav-left img{
+
+.messages-nav-left img {
     max-width: 50px;
     border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
 }
-.messages-nav-left i{
+
+.messages-nav-left i {
     color: #00B2FF;
 }
-.messages-nav-left span{
+
+.messages-nav-left span {
     font-size: 15px;
     font-weight: 600;
 }
-.messages-nav-right{
+
+.messages-nav-right {
     color: #00B2FF;
     display: flex;
     align-items: center;
 }
-.messages-nav-right i{
+
+.messages-nav-right i {
     margin: 5px;
     font-size: 18px;
 }
-.messages-chat{
+
+.messages-chat {
     display: flex;
     flex-direction: column;
 
 }
-.back{
+
+.back {
     cursor: pointer;
 }
 
 .discussion {
-	max-width: 400px;
-	margin: 0 auto;
-	display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
     max-height: 70vh;
     flex-direction: column;
     overflow-y: auto;
@@ -296,29 +322,33 @@ body{
     padding-top: 20px;
 }
 
-.discussion > .bubble {
-	border-radius: 1em;
-	padding: 0.25em 0.75em;
-	margin: 0.0625em;
-	max-width: 50%;
+.discussion>.bubble {
+    border-radius: 1em;
+    padding: 0.25em 0.75em;
+    margin: 0.0625em;
+    max-width: 50%;
 }
 
-.discussion > .bubble.sender {
-	align-self: flex-start;
-	background-color: cornflowerblue;
-	color: #fff;
+.discussion>.bubble.sender {
+    align-self: flex-start;
+    background-color: cornflowerblue;
+    color: #fff;
 }
-.discussion > .bubble.recipient {
-	align-self: flex-end;
-	background-color: #efefef;
+
+.discussion>.bubble.recipient {
+    align-self: flex-end;
+    background-color: #efefef;
 }
-audio{
+
+audio {
     max-width: 100%;
 }
-.discussion img{
+
+.discussion img {
     max-width: 100%;
 }
-.timestamp{
+
+.timestamp {
     font-size: 11px;
     opacity: 0.6;
     display: block;
@@ -327,7 +357,7 @@ audio{
 
 
 /* NOTES APP */
-.notes-app{
+.notes-app {
     min-width: 390px;
     box-sizing: border-box;
     padding: 20px;
@@ -336,15 +366,18 @@ audio{
     max-height: 80vh;
     overflow-y: auto;
 }
-.notes-app{
+
+.notes-app {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
-.notes-app p{
+
+.notes-app p {
     color: black;
     opacity: 0.7;
 }
-.note{
+
+.note {
     background: white;
     box-sizing: border-box;
     background: rgb(252 255 224);
@@ -353,17 +386,21 @@ audio{
     margin-top: 3px;
     cursor: pointer;
 }
-.note:hover{
+
+.note:hover {
     opacity: 0.8;
 }
-.note span{
+
+.note span {
     font-weight: 600;
 }
-.note p{
+
+.note p {
     margin: 0;
     padding: 0;
 }
-.note .date{
+
+.note .date {
     font-size: 10px;
     opacity: 0.5;
     display: block;
@@ -371,35 +408,41 @@ audio{
 
 
 
-.read-note{
+.read-note {
     min-width: 390px;
 }
-.read-note-nav{
+
+.read-note-nav {
     display: flex;
     justify-content: space-between;
     color: rgb(248, 184, 65);
     box-sizing: border-box;
     padding: 10px;
 }
-.read-note-nav-left{
+
+.read-note-nav-left {
     display: flex;
     align-items: center;
 }
-.read-note-nav-left span{
+
+.read-note-nav-left span {
     margin-left: 10px;
     font-size: 16px;
 }
-.read-note-nav-right i{
-margin-left: 10px;
-font-size: 15px;
+
+.read-note-nav-right i {
+    margin-left: 10px;
+    font-size: 15px;
 }
-.read-note-body{
+
+.read-note-body {
     box-sizing: border-box;
     padding: 10px;
     max-height: 80vh;
     overflow-y: auto;
 }
-.read-note-body .date{
+
+.read-note-body .date {
     display: block;
     font-size: 14px;
     text-align: center;
@@ -409,7 +452,7 @@ font-size: 15px;
 
 
 /* VOICE MEMOS */
-.voicememmos-app{
+.voicememmos-app {
     display: flex;
     flex-direction: column;
     min-width: 390px;
@@ -418,29 +461,32 @@ font-size: 15px;
     max-height: 80vh;
     overflow-y: auto;
 }
-.voicememmos-app h2{
+
+.voicememmos-app h2 {
     font-size: 25px;
 }
 
-.recording{
+.recording {
     box-sizing: border-box;
     border-bottom: 1px solid rgb(233, 233, 233);
     padding-top: 7px;
     padding-bottom: 7px;
-    
+
 }
-.recording-info{
+
+.recording-info {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     color: rgb(168, 167, 167);
 }
-.recording .title{
+
+.recording .title {
     font-weight: 600;
 }
 
 /* SAFARI */
-.safari-app{
+.safari-app {
     min-width: 390px;
     box-sizing: border-box;
     padding: 20px;
@@ -449,7 +495,8 @@ font-size: 15px;
     max-height: 80vh;
     overflow-y: auto;
 }
-.safari-app .search-bar{
+
+.safari-app .search-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -461,7 +508,8 @@ font-size: 15px;
     align-items: center;
     border-radius: 5px;
 }
-.safari-body{
+
+.safari-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -469,13 +517,15 @@ font-size: 15px;
     justify-content: center;
     min-height: 400px;
 }
-.safari-body input{
+
+.safari-body input {
     border-radius: 10px;
     border: 1px solid lightgray;
     margin-top: 20px;
 
 }
-.safari-body button{
+
+.safari-body button {
     margin-top: 10px;
     background: lightgray;
     border: none;
@@ -484,7 +534,7 @@ font-size: 15px;
 }
 
 
-.school-app{
+.school-app {
     min-width: 390px;
     box-sizing: border-box;
     padding: 20px;
@@ -497,23 +547,24 @@ font-size: 15px;
     align-items: center;
 }
 
-.school-app{
+.school-app {
     text-align: center;
     color: white;
 }
 
-.login-school-app input{
+.login-school-app input {
     border: 1px solid lightgray;
     margin: 5px;
-    
+
 }
-.school-app img{
-    max-width:80%;
+
+.school-app img {
+    max-width: 80%;
     transform: scale(0.8);
 }
 
 
-.teacher{
+.teacher {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -521,39 +572,44 @@ font-size: 15px;
     cursor: pointer;
     margin-bottom: 10px;
 }
-.teacher:hover{
+
+.teacher:hover {
     opacity: 0.8;
 }
 
-.teacher-panel{
+.teacher-panel {
     max-height: 80vh;
     overflow-y: auto;
 }
-.teacher-panel img{
+
+.teacher-panel img {
     max-width: 100%;
 }
-.teacher-panel .teacher img{
+
+.teacher-panel .teacher img {
     max-width: 50%;
 }
 
-.teacher-profile{
+.teacher-profile {
     position: relative;
     max-height: 80vh;
     min-height: 80vh;
     overflow-y: auto;
 }
 
-.teacher-profile img{
+.teacher-profile img {
     max-width: 100%;
 }
-.teacher span{
+
+.teacher span {
     background: rgb(223, 255, 226);
     color: black;
     box-sizing: border-box;
     padding: 5px;
     border-radius: 5px;
 }
-.nav-teacher{
+
+.nav-teacher {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -563,28 +619,32 @@ font-size: 15px;
     font-size: 20px;
 }
 
-.teacher-block{
+.teacher-block {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid lightgray;
     margin-bottom: 10px;
 }
-.name-position{
+
+.name-position {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.teacher-name{
+
+.teacher-name {
     margin-right: 10px;
     font-weight: 900;
     color: black;
 }
-.teacher-position{
+
+.teacher-position {
     font-size: 14px;
     opacity: 0.6;
     font-weight: 600;
 }
-.more-info-teacher{
+
+.more-info-teacher {
     text-decoration: underline;
     color: blue;
     font-size: 14px;
@@ -594,7 +654,7 @@ font-size: 15px;
 }
 
 
-.techer-profile-info{
+.techer-profile-info {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -602,29 +662,32 @@ font-size: 15px;
     position: absolute;
     top: 380px
 }
-.go-back-teacher{
+
+.go-back-teacher {
     font-size: 30px;
     background: #fd5e0f;
     padding: 5px 20px;
-    position:fixed;
+    position: fixed;
 }
-.first-info{
+
+.first-info {
     background: #fd5e0f;
     box-sizing: border-box;
     padding: 10px;
 
 }
 
-.techer-profile-info .teacher-position{
+.techer-profile-info .teacher-position {
     color: #EBE7EA;
     font-weight: 600;
     font-size: 16px;
 }
-.techer-profile-info .teacher-name{
+
+.techer-profile-info .teacher-name {
     color: #EBE7EA;
 }
 
-.second-info{
+.second-info {
     background: #fd5e0f;
     margin-top: 20px;
     box-sizing: border-box;
@@ -635,30 +698,50 @@ font-size: 15px;
 
 /* PHONE APP */
 
-.phoneapp{
-    display: flex;
-    flex-direction: column;
+
+.keyboard {
     box-sizing: border-box;
-    padding: 10px;
-    max-height: 80vh;
-    overflow-y: auto;
-}
-.call{
+    padding: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    border-bottom: 1px solid rgb(161, 161, 161);
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.call .missed{
-    color: red;
+
+.number-key {
+    background: rgb(221, 219, 219);
+    padding: 30px;
+    font-size: 25px;
+    clip-path: circle();
+    margin: 5px;
+    cursor: pointer;
 }
-.call .taken{
-    color: black;
+
+.call {
+    background: rgb(0, 184, 55);
+    padding: 30px;
+    font-size: 25px;
+    clip-path: circle();
+    margin: 5px;
+    cursor: pointer;
 }
-.call .number{
-    font-weight: 600;
-    font-size: 18px;
+
+.call i {
+    color: white;
+}
+
+.phone-call {
+    border: none;
+    font-size: 35px;
+    text-align: center;
+}
+
+.calling{
+    justify-content: center;
+    align-items: center;
+}
+.called-number{
+    font-size: 19px;
+    font-weight: 500px;
 }
 
 /* GAME */
@@ -666,21 +749,22 @@ font-size: 15px;
 
 
 .game h1 {
-  background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png") 0% 340px;
-  padding: 1.2rem 0;
-  margin: 0;
+    background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png") 0% 340px;
+    padding: 1.2rem 0;
+    margin: 0;
 }
+
 .score-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 6px;
-  background: #5EE270;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 6px;
+    background: #5EE270;
 }
 
 
 
 /*EMAIL*/
-.app-common{
+.app-common {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -688,20 +772,23 @@ font-size: 15px;
     max-height: 80vh;
     overflow-y: auto;
 }
-.forgot-password-email{
+
+.forgot-password-email {
     color: blue;
     text-decoration: underline;
 }
-.mail-app span{
-font-size: 40px;
-margin-bottom: 50px;
+
+.mail-app span {
+    font-size: 40px;
+    margin-bottom: 50px;
 
 }
-.forgot-password span{
+
+.forgot-password span {
     font-size: 24px;
 }
 
-.single-mail{
+.single-mail {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -709,122 +796,138 @@ margin-bottom: 50px;
     cursor: pointer;
     margin-bottom: 20px;
 }
-.single-mail:hover{
+
+.single-mail:hover {
     opacity: 0.7;
 }
-.single-mail-head{
+
+.single-mail-head {
     display: flex;
     justify-content: space-between;
 }
-.single-mail-head .from{
+
+.single-mail-head .from {
     font-weight: 800;
 }
-.single-mail-head .date{
+
+.single-mail-head .date {
     color: darkgray;
 }
-.single-mail .content{
+
+.single-mail .content {
     display: flex;
     flex-direction: column;
 }
-.single-mail p{
+
+.single-mail p {
     margin: 0;
 }
-.single-mail .subject{
+
+.single-mail .subject {
     font-weight: 500;
     font-size: 18px;
 }
-.single-mail .preview{
+
+.single-mail .preview {
     color: rgb(131, 130, 130);
     font-weight: 100;
 }
 
-.lock-screen-messenger img{
-max-width: 100px;
-margin: auto;
+.lock-screen-messenger img {
+    max-width: 100px;
+    margin: auto;
 }
 
-.lock-screen-messenger .form-group{
+.lock-screen-messenger .form-group {
     margin-bottom: 20px;
 }
 
 
 /* PROFILE */
-.facebook-profile .posts{
+.facebook-profile .posts {
     box-sizing: border-box;
 
     max-height: 80vh;
     overflow-y: auto;
 }
 
-.post{
+.post {
     margin-bottom: 20px;
 }
 
-.post-head{
+.post-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.post-head img{
+
+.post-head img {
     max-width: 50px;
     height: 50px;
     border-radius: 100px;
 }
-.post-head-info{
+
+.post-head-info {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 10px;
 }
-.post-body img{
-max-width: 100%;
+
+.post-body img {
+    max-width: 100%;
 }
-.post-body{
+
+.post-body {
     margin-top: 10px;
 }
 
-.post-footer{
+.post-footer {
     display: flex;
     align-items: center;
     border-bottom: 1px solid lightgray;
 }
-.post-footer img{
+
+.post-footer img {
     max-width: 30px;
 }
 
 
 /* THE PASSWORD GAME */
-.passwordgame{
-    background:#fffae9;
+.passwordgame {
+    background: #fffae9;
     min-height: 80vh;
     align-items: center;
     justify-content: center;
 }
-.passwordgame h2{
+
+.passwordgame h2 {
     text-align: center;
 }
-.passwordgame .info{
-text-align: center;
-color: black;
-font-weight: bold;
-stroke: 1px solid black;
+
+.passwordgame .info {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    stroke: 1px solid black;
 }
 
-.passwordgame .crypted-pass{
+.passwordgame .crypted-pass {
     border-radius: 20px;
     padding: 10px;
 }
-.passwordgame i{
-font-size: 30px;
+
+.passwordgame i {
+    font-size: 30px;
 }
 
-.passwordgame li::before{
+.passwordgame li::before {
     content: "✅";
 }
 
 
 /* IP TRACKER */
-.iptracker{
+.iptracker {
     background: black;
     border: 2px dashed #5EE270;
     min-height: 80vh;
@@ -833,49 +936,100 @@ font-size: 30px;
     justify-content: center;
 }
 
-.iptracker h1,.iptracker h2, .passwordgame h2{
+.iptracker h1,
+.iptracker h2,
+.passwordgame h2 {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
     color: #5EE270;
     text-shadow: 2px 2px 10px #5EE270;
 }
-.iptracker p{
+
+.iptracker p {
     color: #5EE270;
 }
-.iptracker i, .passwordgame i{
+
+.iptracker i,
+.passwordgame i {
     font-size: 50px;
     color: #5EE270;
     margin-bottom: 20px;
 }
-.iptracker .password-iptracker{
+
+.iptracker .password-iptracker {
     width: 80%;
-    border:none;
+    border: none;
     background: black;
     border-bottom: 1px solid lightgray;
     border-radius: 5px;
     padding: 10px;
     color: white;
 }
-.iptracker .search-history-iptracker table{
+
+.iptracker .search-history-iptracker table {
     color: #5EE270;
 }
-.iptracker .search-history-iptracker{
+
+.iptracker .search-history-iptracker {
     max-height: 400px;
     overflow-y: auto;
 }
 
 
-.date-separator{
+.date-separator {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     opacity: 0.7;
 }
 
-.ip-tracker-pass{
+.ip-tracker-pass {
 
-padding: 5px 20px;
-border-radius: 5px;
+    padding: 5px 20px;
+    border-radius: 5px;
 
+}
+
+
+.notification {
+    width: 90%;
+    left: 50%;
+    top: 10%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    height: 100px;
+    background: rgba(146, 146, 146, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.not-app-info {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+    padding-bottom: 0;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.not-data h4 {
+    font-size: 18px;
+}
+
+.not-data p {
+    font-size: 12px;
+}
+
+.not-data {
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
 }
