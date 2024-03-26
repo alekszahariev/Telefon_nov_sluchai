@@ -951,6 +951,11 @@ audio {
     align-items: center;
     justify-content: center;
 }
+.iptracker table{
+    max-width: 300px;
+    overflow-x: auto;
+}
+
 
 .iptracker h1,
 .iptracker h2,
@@ -960,6 +965,7 @@ audio {
     font-style: normal;
     color: #5EE270;
     text-shadow: 2px 2px 10px #5EE270;
+    font-size: 20px;
 }
 
 .iptracker p {
@@ -1049,3 +1055,6 @@ audio {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
+

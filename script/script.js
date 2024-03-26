@@ -1359,7 +1359,7 @@ function IpTracker(){
     let btn = document.querySelector(".iptracker .btn")
     btn.addEventListener("click", function(){
       let ip = document.querySelector(".password-iptracker").value
-      if(ip === "192.168.1.0"){
+      if(ip === "210.67.90.123"){5
         app_body.innerHTML = 
         `
         <div class="iptracker app-common">
@@ -1380,65 +1380,321 @@ function IpTracker(){
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td scope="row">12.05.25</td>
-                        <td>www.google.bg</td>
-                      
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">01.04.24</td>
-                        <td>Chanel.com</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <td scope="row">23.03.24</td>
+                    <td>Dubai rent a house</td>
+                  
+                </tr>
+                <tr>
+                    <td scope="row">23.03.24</td>
+                    <td>Възможно ли е екстрадиране от Дубай</td>
+                </tr>
+                <tr>
+                    <td scope="row">22.03.24</td>
+                    <td>www.googleflights.com</td>
+                </tr>
+                <tr>
+                    <td scope="row">22.03.24</td>
+                    <td>От къде се купува фалшив паспорт</td>
+                </tr>
+                <tr>
+                    <td scope="row">18.03.24</td>
+                    <td>Как да направим отрова от билки</td>
+                </tr>
+                <tr>
+                    <td scope="row">18.03.24</td>
+                    <td>www.bilkous.bg</td>
+                    </tr>   
+            </tbody>
             </table>
 
            </div>
 
      </div>    
         `
-      }else{
-        alert("Няма такова IP. Намери правилното IP.")
       }
+
+      if(ip === "203.128.56.77"){1
+        app_body.innerHTML = 
+        `
+        <div class="iptracker app-common">
+        <i class="fa-solid fa-user-secret"></i>
+           <h2>${ip}</h2>
+        
+           <div class="info">
+            <p>Проследи браузър историята на всяко IP</p>
+           </div>
+
+           <div class="search-history-iptracker">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Уебсайт</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+    <tr>
+        <td scope="row">22.03.24</td>
+        <td>Погребална агенция София</td>
+      
+    </tr>
+    <tr>
+        <td scope="row">15.03.24</td>
+        <td>Онлайн консултация</td>
+    </tr>
+    <tr>
+        <td scope="row">12.03.24</td>
+        <td>Адвокат по фирмено дело</td>
+    </tr>
+    <tr>
+        <td scope="row">02.03.24</td>
+        <td>Как да си направим билков лек</td>
+    </tr>
+    <tr>
+        <td scope="row">01.03.24</td>
+        <td>Съдружници прехвърляне на дялове</td>
+    </tr>
+    <tr>
+        <td scope="row">23.02.24</td>
+        <td>Как да затвърдя позицията си на собственик на фирма</td>
+        </tr>   
+</tbody>
+
+            </table>
+
+           </div>
+
+     </div>    
+        `
+      }
+
+      if(ip === "172.16.34.56"){4
+        app_body.innerHTML = 
+        `
+        <div class="iptracker app-common">
+        <i class="fa-solid fa-user-secret"></i>
+           <h2>${ip}</h2>
+        
+           <div class="info">
+            <p>Проследи браузър историята на всяко IP</p>
+           </div>
+
+           <div class="search-history-iptracker">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Уебсайт</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td scope="row">22.03.24</td>
+                    <td>Георги Арджиков</td>
+                  
+                </tr>
+                <tr>
+                    <td scope="row">19.03.24</td>
+                    <td>Aura by bambo maps</td>
+                </tr>
+                <tr>
+                    <td scope="row">12.03.24</td>
+                    <td>Как да се самоубия безболезнено</td>
+                </tr>
+                <tr>
+                    <td scope="row">10.03.24</td>
+                    <td>Как да изчезна безследно</td>
+                </tr>
+                <tr>
+                    <td scope="row">23.02.24</td>
+                    <td>Вуйчо ми иска да спи с мен</td>
+                </tr>
+                <tr>
+                    <td scope="row">21.02.24</td>
+                    <td>Хиалуронова киселина странични ефекти</td>
+                  </tr>
+            </tbody>
+
+            </table>
+
+           </div>
+
+     </div>    
+        `
+      }
+
+      if(ip === "124.89.201.34"){2
+        app_body.innerHTML = 
+        `
+        <div class="iptracker app-common">
+        <i class="fa-solid fa-user-secret"></i>
+           <h2>${ip}</h2>
+        
+           <div class="info">
+            <p>Проследи браузър историята на всяко IP</p>
+           </div>
+
+           <div class="search-history-iptracker">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Уебсайт</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+    <tr>
+        <td scope="row">21.03.24</td>
+        <td>начини за самоубийство</td>
+      
+    </tr>
+    <tr>
+        <td scope="row">15.03.24</td>
+        <td>www.mercedesbenz.com</td>
+    </tr>
+    <tr>
+        <td scope="row">10.03.24</td>
+        <td>Георги Арджиков</td>
+    </tr>
+    <tr>
+        <td scope="row">03.03.24</td>
+        <td>Протеин след или преди тренировка</td>
+    </tr>
+    <tr>
+        <td scope="row">01.03.24</td>
+        <td>www.viagra.com</td>
+    </tr>
+    <tr>
+        <td scope="row">26.02.24</td>
+        <td>www.themacallan.com</td>
+        <tr>
+</tbody>
+
+            </table>
+
+           </div>
+
+     </div>    
+        `
+      }
+      if(ip === "124.89.201.34"){3
+        app_body.innerHTML = 
+        `
+        <div class="iptracker app-common">
+        <i class="fa-solid fa-user-secret"></i>
+           <h2>${ip}</h2>
+        
+           <div class="info">
+            <p>Проследи браузър историята на всяко IP</p>
+           </div>
+
+           <div class="search-history-iptracker">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Уебсайт</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+    <tr>
+        <td scope="row">16.03.24</td>
+        <td>www.rolex.com</td>
+      
+    </tr>
+    <tr>
+        <td scope="row">13.03.24</td>
+        <td>Иван Арджиков - статии</td>
+    </tr>
+    <tr>
+        <td scope="row">12.03.24</td>
+        <td>Иван Арджиков - папараци</td>
+    </tr>
+    <tr>
+        <td scope="row">09.03.24</td>
+        <td>Vannesa Hudgens</td>
+    </tr>
+    <tr>
+        <td scope="row">07.03.24</td>
+        <td>www.cornhub.com</td>
+    </tr>
+    <tr>
+        <td scope="row">05.03.24</td>
+        <td>Best Mercedes GT Brabus 2023 mods</td>
+      <tr> 
+</tbody>
+
+            </table>
+
+           </div>
+
+     </div>    
+        `
+      }
+
+      if(ip === "185.76.210.55"){6
+        app_body.innerHTML = 
+        `
+        <div class="iptracker app-common">
+        <i class="fa-solid fa-user-secret"></i>
+           <h2>${ip}</h2>
+        
+           <div class="info">
+            <p>Проследи браузър историята на всяко IP</p>
+           </div>
+
+           <div class="search-history-iptracker">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Уебсайт</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+    <tr>
+        <td scope="row">22.03.24</td>
+        <td>Адвокат отдел убийства</td>
+      
+    </tr>
+    <tr>
+        <td scope="row">20.03.24</td>
+        <td>Почивка в Париж</td>
+    </tr>
+    <tr>
+        <td scope="row">18.03.24</td>
+        <td>Задължителна отпуска</td>
+    </tr>
+    <tr>
+        <td scope="row">15.03.24</td>
+        <td>Как да преодолея загубата на любовта на живота ми </td>
+    </tr>
+    <tr>
+        <td scope="row">14.03.24</td>
+        <td>Онлайн професионален курс по готвене</td>
+    </tr>
+    <tr>
+        <td scope="row">12.03.24</td>
+        <td>Как да осъдя работодателя си</td>
+      <tr> 
+</tbody>
+
+            </table>
+
+           </div>
+
+     </div>    
+        `
+      }
+
+
+
     })
   }
 
