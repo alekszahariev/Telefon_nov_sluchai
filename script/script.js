@@ -554,7 +554,7 @@ function SafariApp(){
     document.querySelector(".safari-app .btn").addEventListener("click", function(){
       let search_query = search_input.value.toLowerCase()
       if(search_query != ""){
-        if(search_query === "арджиков груп"){
+        if(search_query.includes("ardjikovgrup")){
           app_body.innerHTML = 
           `
           <div class="app-common">
