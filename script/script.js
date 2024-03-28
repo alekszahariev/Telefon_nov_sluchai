@@ -561,10 +561,134 @@ function SafariApp(){
           <img src="./assets/websites/ardjikov.jpg" style="max-width:100%;">
           </div>
           `
-        }else{
-          alert("Няма данни за такъв уебсайт")
-          search_input.value = ""
         }
+        if(search_query.includes("alo.bg")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/alo.png" style="max-width:100%;">
+          </div>
+          `
+        }
+        if(search_query.includes("protectus")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/protectus.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("dunevi")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/dunevi.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("toyota")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/toyota.png" style="max-width:100%;">
+          </div>
+          `
+        }
+        if(search_query.includes("dunevi")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/dunevi.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("fantastico")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/dunevi.png" style="max-width:100%;">
+          </div>
+          `
+        }
+        if(search_query.includes("chanel")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/chanel.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("aura")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/aura.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("djanti")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/djanti.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("kylie")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/kylie.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("mercedes")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/mercedes.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("skincare")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/chanel.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("bilki")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/bilki.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+        if(search_query.includes("sofianews")){
+          app_body.innerHTML = 
+          `
+          <div class="app-common">
+          <img src="./assets/websites/news.png" style="max-width:100%;">
+          </div>
+          `
+        }
+
+
+
+
+        
       }
     })
 
