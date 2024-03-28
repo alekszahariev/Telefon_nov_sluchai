@@ -806,7 +806,7 @@ function PhoneApp(){
       key.addEventListener("click", function(){
         let number = this.getAttribute("data-key")
         input.value += number
-        var audio = new Audio('../assets/sounds/phone_key.mp3');
+        var audio = new Audio('./assets/sounds/phone_key.mp3');
           audio.play();
       })
     })
@@ -820,7 +820,7 @@ function PhoneApp(){
       if(phone_number === "04222144"){
         input.value = "..."
         call_btn.style.background = "red";
-        var audio = new Audio('../assets/sounds/iplog.mp3');
+        var audio = new Audio('./assets/sounds/iplog.mp3');
         audio.play();
 
         call_btn.addEventListener("click", function(){
@@ -1670,7 +1670,7 @@ function ShowNotification(app, title, description){
   not_app_name.innerHTML = app
   not_title.innerHTML = title
   not_desc.innerHTML = description
-  var audio = new Audio('../assets/sounds/notification.mp3');
+  var audio = new Audio('./assets/sounds/notification.mp3');
   audio.play();
 
 
