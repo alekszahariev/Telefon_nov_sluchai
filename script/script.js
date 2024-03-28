@@ -135,8 +135,56 @@ function Galeria(){
 
 
 
+}function PhotosApp(){
+  app_body.innerHTML = `
+  <div class="photos-app">
+  </div>
+  `
+
+  var folder = "./assets/photos_app/";
+  let photos_links = [];
+// Add all images from the folder to the array above
+$.ajax({
+  url : folder,
+  success: function (data) {
+      $(data).find("a").attr("href", function (i, val) {
+          if (val.match(/\.(jpe?g|png|gif|jfif)$/)) {
+              photos_links.push({
+                  link: val,
+                  date: "Снимка"
+              });
+          }
+      });
+      appendImages()
+  }
+});
+
+function  appendImages(){
+  let photos_app_body = document.querySelector(".photos-app");
+          photos_links.forEach(photo => {   
+          var img = document.createElement("img");
+          img.src = "./assets/photos_app/"+photo.link;
+          img.setAttribute("data-sub-html", photo.date);
+      
+      
+         
+          // Append the anchor element to the .photos-app container
+          photos_app_body.appendChild(img);
+      });
+
+      Galeria()
+}
+function Galeria(){
+  lightGallery(document.querySelector(".photos-app"), {
+      speed: 500,
+      subHtmlSelectorRelative: true,
+      licenseKey: "3BB5B066-2587-4658-A964-5DCAC85A5179",
+  });
 }
 
+
+
+}
 var password_messenger_mail = 0;
 isloggedin_messenger = 1
 function MessengerApp(){

@@ -6,7 +6,7 @@
     },
     {
         "date": "03.01.2024",
-        "content": "ЧНГ. и само успехи за новата ни офис сграда.&#128200<br><img src='../../assets/fbpost/7.png'>",
+        "content": "ЧНГ. и само успехи за новата ни офис сграда.&#128200<br><img src='./assets/fbpost/7.png'>",
         "likecount": "87"
     },
     {
@@ -16,12 +16,12 @@
     },
     {
         "date": "18.09.2023",
-        "content": "Връх Вълчата скала за пореден път.&#128507<br><img src='../../assets/fbpost/6.png'>",
+        "content": "Връх Вълчата скала за пореден път.&#128507<br><img src='./assets/fbpost/6.png'>",
         "likecount": "56"
     },
     {
         "date": "12.07.2023",
-        "content": "Егейско море &#128526<br><img src='../../assets/fbpost/5.jpeg'>",
+        "content": "Егейско море &#128526<br><img src='./assets/fbpost/5.jpeg'>",
         "likecount": "78"
     },
     {
@@ -31,22 +31,22 @@
     },
     {
         "date": "02.01.2023",
-        "content": "ЧНГ. Бъдете здрави! <br><img src='../../assets/fbpost/2.png'>",
+        "content": "ЧНГ. Бъдете здрави! <br><img src='./assets/fbpost/2.png'>",
         "likecount": "138"
     },
     {
         "date": "03.11.2022",
-        "content": "Не мечтаите за успеха, ами работете за него.&#128182<br><img src='../../assets/fbpost/4.png' ",
+        "content": "Не мечтаите за успеха, ами работете за него.&#128182<br><img src='./assets/fbpost/4.png' ",
         "likecount": "470"
     },
     {
         "date": "15.09.2022",
-        "content": "Пресконференция, 15 септември.&#128188<br><img src='../../assets/fbpost/3.png'>",
+        "content": "Пресконференция, 15 септември.&#128188<br><img src='./assets/fbpost/3.png'>",
         "likecount": "87"
     },
     {
         "date": "05.05.2022",
-        "content": "Храм-паметник 'Свети Александър Невски' &#9962<br><img src='../../assets/fbpost/1.png'>",
+        "content": "Храм-паметник 'Свети Александър Невски' &#9962<br><img src='./assets/fbpost/1.png'>",
         "likecount": "127"
     }
 ]
