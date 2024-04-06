@@ -1058,3 +1058,10 @@ audio {
 
 
 
+.go-back-google{
+    position: absolute;
+    background: rgb(226, 226, 226);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}

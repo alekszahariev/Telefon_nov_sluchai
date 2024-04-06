@@ -1,4 +1,4 @@
-PhonePassword()
+// honePassword()
 function PhonePassword(){
     let password = prompt("Парола за телефона:", "");
     if(password === "879"){
@@ -254,7 +254,8 @@ function ShowChatList(){
   <div class="messenger-nav">
       <i class="fa-solid fa-bars"></i>
       <span>Chats</span>
-      <span class="open-profile-fb" style="background: #ececec;
+      <span class="open-profile-fb" style="background: black;
+      color:white;
       padding: 0px 20px;
       text-align: center;
       border-radius: 10px;">Профил -></span>
@@ -591,7 +592,7 @@ function SafariApp(){
                     <div class="safari-body">
                         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
                 
-                        <input type="text" class="w-100 p-2 search-google" placeholder="Търси">
+                        <input type="text" class="w-100 p-2 search-google" placeholder="Www.website.com - работи само с линкове">
 
                         <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Търси </button>
         </div>
@@ -602,136 +603,135 @@ function SafariApp(){
     document.querySelector(".safari-app .btn").addEventListener("click", function(){
       let search_query = search_input.value.toLowerCase()
       if(search_query != ""){
-        if(search_query.includes("ardjikovgrup")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/ardjikov.jpg" style="max-width:100%;">
-          </div>
-          `
-        }
-        if(search_query.includes("alo.bg")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/alo.png" style="max-width:100%;">
-          </div>
-          `
-        }
-        if(search_query.includes("protectus")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/protectus.png" style="max-width:100%;">
-          </div>
-          `
-        }
+        switch(true) {
+          case search_query.includes("ardjikovgroup"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                      <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
+                      <img src="./assets/websites/ardjikov.jpg" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("alo.bg"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
+                      <img src="./assets/websites/alo.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("protectus"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("dunevi")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/dunevi.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/protectus.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("dunevi"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("toyota")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/toyota.png" style="max-width:100%;">
-          </div>
-          `
-        }
-        if(search_query.includes("dunevi")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/dunevi.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/dunevi.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("toyota"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("fantastico")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/dunevi.png" style="max-width:100%;">
-          </div>
-          `
-        }
-        if(search_query.includes("chanel")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/chanel.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/toyota.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("fantastico"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("aura")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/aura.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/dunevi.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("chanel"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("djanti")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/djanti.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/chanel.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("aura"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("kylie")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/kylie.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/aura.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("djanti"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("mercedes")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/mercedes.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/djanti.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("kylie"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("skincare")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/chanel.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/kylie.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("mercedes"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("bilki")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/bilki.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/mercedes.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("skincare"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
 
-        if(search_query.includes("sofianews")){
-          app_body.innerHTML = 
-          `
-          <div class="app-common">
-          <img src="./assets/websites/news.png" style="max-width:100%;">
-          </div>
-          `
-        }
+                      <img src="./assets/websites/chanel.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("bilki"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
+
+                      <img src="./assets/websites/bilki.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          case search_query.includes("sofianews"):
+              app_body.innerHTML = `
+                  <div class="app-common">
+                  <a class="go-back-google" onclick="SafariApp()"><i class="fa-solid fa-arrow-left"></i></a>
+
+                      <img src="./assets/websites/news.png" style="max-width:100%;">
+                  </div>`;
+              break;
+      
+          default:
+            alert("Няма такъв уебсайт")
+              break;
+      }
 
 
 
@@ -1540,7 +1540,7 @@ function IpTracker(){
      </div>    
         `
       }
-      if(ip === "124.89.201.34"){3
+      if(ip === "87.45.189.23"){3
         app_body.innerHTML = 
         `
         <div class="iptracker app-common">
