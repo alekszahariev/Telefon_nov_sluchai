@@ -1,4 +1,4 @@
-// honePassword()
+honePassword()
 function PhonePassword(){
     let password = prompt("Парола за телефона:", "");
     if(password === "879"){
