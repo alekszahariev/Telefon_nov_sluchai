@@ -1227,13 +1227,13 @@ function ShowMailList(){
           msg += "Грешка във въпрос 2"
         }
         
-        if(answer3 === "карлово"){
+        if(answer3.includes("карлово")){
           ans_3 = true;
         }else{
           msg += "Грешка във въпрос 3"
         }
         
-        if(answer4 === "маринянев"){
+        if(answer4.includes("маринянев")){
           ans_4 = true;
         }else{
           msg += "Грешка във въпрос 4"
