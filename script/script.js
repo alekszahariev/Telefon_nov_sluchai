@@ -188,7 +188,7 @@ function Galeria(){
 
 }
 var password_messenger_mail = 0;
-isloggedin_messenger = 0
+isloggedin_messenger = 1
 function MessengerApp(){
     app_body.innerHTML = `
     <div class="lock-screen-messenger app-common">
@@ -819,20 +819,41 @@ function PhoneApp(){
     call_btn.addEventListener("click", function(){
       let phone_number = input.value
 
-      if(phone_number === "04222144"){
-        input.value = "..."
-        call_btn.style.background = "red";
-        var audio = new Audio('./assets/sounds/iplog.mp3');
-        audio.play();
+      switch (phone_number) {
+        case "04222144":
+          input.value = "...";
+          call_btn.style.background = "red";
+          var audio1 = new Audio('./assets/sounds/iplog.mp3');
+          audio1.play();
+      
+          call_btn.addEventListener("click", function(){
+            audio1.pause();
+            app.style.display="none";
+          });
+          break;
+      
+        case "089900000485":
+          input.value = "...";
+          call_btn.style.background = "red";
+          var audio2 = new Audio('./assets/sounds/ardjikov.mp3');
+          audio2.play();
+      
+          call_btn.addEventListener("click", function(){
+            audio2.pause();
+            app.style.display="none";
+          });
+          break;
 
-        call_btn.addEventListener("click", function(){
-          audio.pause();
-          app.style.display="none";
-        })
-
-      }else{
-        input.value = "";
-        alert("Нямаш ваучер за този номер. Потърси безплатен номер :)")
+          case "...":
+            call_btn.addEventListener("click", function(){
+              audio2.pause();
+              app.style.display="none";
+            });
+            break;
+      
+        default:
+          input.value = "";
+          alert("Нямаш ваучер за този номер. Потърси безплатен номер :)");
       }
 
     })
