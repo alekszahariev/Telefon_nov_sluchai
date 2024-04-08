@@ -160,6 +160,8 @@ $.ajax({
 });
 
 function  appendImages(){
+  
+
   let photos_app_body = document.querySelector(".photos-app");
           photos_links.forEach(photo => {   
           var img = document.createElement("img");
