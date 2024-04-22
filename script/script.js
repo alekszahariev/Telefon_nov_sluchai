@@ -1297,7 +1297,7 @@ function IpTracker(){
        <div class="info">
        <h2>ЗАКЛЮЧЕНО</h2>
            <p>Проследи браузър историята на всяко IP<br></p>
-          <input  type="text" class="ip-tracker-pass" placeholder="Масонски код">
+          <input  type="text" class="ip-tracker-pass" placeholder="Тайна парола">
        </div> 
   
     </div>
@@ -1333,7 +1333,7 @@ function IpTracker(){
                            
                            
                         <input class="password-iptracker" type="text" placeholder="ИП:" >
-                        <button class="btn btn-success w-50 my-4">Проследни</button>
+                        <button class="btn btn-success w-50 my-4">Проследи</button>
                        </div>
      </div>    
     `    
