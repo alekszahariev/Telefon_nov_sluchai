@@ -594,7 +594,7 @@ function SafariApp(){
                     <div class="safari-body">
                         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
                 
-                        <input type="text" class="w-100 p-2 search-google" placeholder="Www.website.com - работи само с линкове">
+                        <input type="text" class="w-100 p-2 search-google" placeholder="Www.website.com - напиши ЛИНК">
 
                         <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Търси </button>
         </div>

@@ -57,8 +57,7 @@ body {
     justify-content: space-between;
     z-index: 999;
     position: fixed;
-    min-width: 365px;
-    max-width: 365px;
+    width: 90%;
 }
 
 .icons i {
@@ -97,6 +96,7 @@ body {
     margin-top: 110px;
     background: rgb(255 43 43 / 50%);
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .footer .icon {
@@ -136,7 +136,7 @@ body {
 }
 
 .app-body {
-    min-width: 100%;
+    max-width: 100%;
 }
 
 
@@ -197,7 +197,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 390px;
 }
 
 .messenger-nav {
@@ -238,6 +237,7 @@ body {
 .person img {
     max-width: 50px;
     border-radius: 50%;
+    max-height: 50px;
 }
 
 .person-info-chat {
@@ -260,9 +260,7 @@ body {
 }
 
 /* MESSAGES */
-.messages {
-    min-width: 390px;
-}
+
 
 .messages-nav {
     display: flex;
@@ -360,7 +358,6 @@ audio {
 
 /* NOTES APP */
 .notes-app {
-    min-width: 390px;
     box-sizing: border-box;
     padding: 20px;
     display: flex;
@@ -410,9 +407,6 @@ audio {
 
 
 
-.read-note {
-    min-width: 390px;
-}
 
 .read-note-nav {
     display: flex;
@@ -489,7 +483,6 @@ audio {
 
 /* SAFARI */
 .safari-app {
-    min-width: 390px;
     box-sizing: border-box;
     padding: 20px;
     display: flex;
@@ -723,8 +716,11 @@ audio {
     cursor: pointer;
     box-sizing: border-box;
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:370px){
     .number-key{
+        padding: 20px!important;
+    }
+    .keyboard{
         padding: 20px!important;
     }
     
