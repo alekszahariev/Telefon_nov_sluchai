@@ -1263,7 +1263,7 @@ function ShowMailList(){
         }
 
         if(ans_1 & ans_2 & ans_3 & ans_4){
-          app_body.innerHTML += `Вашата парола е: <b>ardjikov777</b>`
+          alert("Вашата парола е: ardjikov777 ")
         }else[
           alert(msg)
         ]
