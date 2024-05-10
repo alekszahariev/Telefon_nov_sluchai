@@ -188,7 +188,7 @@ function Galeria(){
 
 }
 var password_messenger_mail = 0;
-isloggedin_messenger = 1
+isloggedin_messenger = 0
 function MessengerApp(){
     app_body.innerHTML = `
     <div class="lock-screen-messenger app-common">
