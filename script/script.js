@@ -1341,6 +1341,8 @@ function IpTracker(){
     let btn = document.querySelector(".iptracker .btn")
     btn.addEventListener("click", function(){
       let ip = document.querySelector(".password-iptracker").value
+    
+
       if(ip === "210.67.90.123"){5
         app_body.innerHTML = 
         `
@@ -1396,7 +1398,7 @@ function IpTracker(){
         `
       }
 
-      if(ip === "203.128.56.77"){1
+    else  if(ip === "203.128.56.77"){1
         app_body.innerHTML = 
         `
         <div class="iptracker app-common">
@@ -1452,7 +1454,7 @@ function IpTracker(){
         `
       }
 
-      if(ip === "172.16.34.56"){4
+      else   if(ip === "172.16.34.56"){4
         app_body.innerHTML = 
         `
         <div class="iptracker app-common">
@@ -1508,7 +1510,7 @@ function IpTracker(){
         `
       }
 
-      if(ip === "124.89.201.34"){2
+      else   if(ip === "124.89.201.34"){2
         app_body.innerHTML = 
         `
         <div class="iptracker app-common">
@@ -1563,7 +1565,7 @@ function IpTracker(){
      </div>    
         `
       }
-      if(ip === "87.45.189.23"){3
+      else   if(ip === "87.45.189.23"){3
         app_body.innerHTML = 
         `
         <div class="iptracker app-common">
@@ -1619,7 +1621,7 @@ function IpTracker(){
      `
    }
 
-   if(ip === "185.76.210.55"){6
+ else  if(ip === "185.76.210.55"){6
      app_body.innerHTML = 
      `
      <div class="iptracker app-common">
@@ -1673,6 +1675,9 @@ function IpTracker(){
 
   </div>    
      `
+   }else{
+    alert("Ип-то е грешно.")
+    document.querySelector(".password-iptracker").value235236 = ""
    }
 
 
